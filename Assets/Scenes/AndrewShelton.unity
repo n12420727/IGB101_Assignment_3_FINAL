@@ -388,7 +388,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -15401,14 +15401,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1502571518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da75a617a4f71bc40bacefbd84506a39, type: 3}
+  m_Script: {fileID: 11500000, guid: dc21ec3823ec7ea428b69cbfcf6c3ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupText: {fileID: 1400485112}
   player: {fileID: 563580591}
   currentPickups: 0
-  maxPickups: 7
+  maxPickups: 8
   levelComplete: 0
-  pickupText: {fileID: 1400485112}
 --- !u!4 &1502571520
 Transform:
   m_ObjectHideFlags: 0
@@ -16130,6 +16130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712760845}
   - component: {fileID: 1712760846}
+  - component: {fileID: 1712760847}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -16146,7 +16147,7 @@ Transform:
   m_GameObject: {fileID: 1712760844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.1, y: 3.7, z: -25.3}
+  m_LocalPosition: {x: -23.1, y: 0.81, z: -25.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16166,6 +16167,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bee54b2345f09948b5c6c5ca115fe42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1712760847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712760844}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1821364219
 GameObject:
   m_ObjectHideFlags: 0
@@ -16291,6 +16313,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bee54b2345f09948b5c6c5ca115fe42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1947033937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947033927}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.96, y: 3.55, z: 22.82}
+  m_Center: {x: -2.03, y: 0, z: 2.87}
 --- !u!1 &1962533167
 GameObject:
   m_ObjectHideFlags: 0
@@ -16797,13 +16840,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7779887279446692567, guid: 808c9a95545a8cf4993f2a548132cdda, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3728687336329442682, guid: 808c9a95545a8cf4993f2a548132cdda, type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 1947033932}
+    - targetCorrespondingSourceObject: {fileID: 3728687336329442682, guid: 808c9a95545a8cf4993f2a548132cdda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1947033937}
   m_SourcePrefab: {fileID: 100100000, guid: 808c9a95545a8cf4993f2a548132cdda, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
