@@ -910,7 +910,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5444133047627518011, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -8870,14 +8871,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 553073755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da75a617a4f71bc40bacefbd84506a39, type: 3}
+  m_Script: {fileID: 11500000, guid: dc21ec3823ec7ea428b69cbfcf6c3ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupText: {fileID: 503328658}
   player: {fileID: 397600473}
   currentPickups: 0
   maxPickups: 10
   levelComplete: 0
-  pickupText: {fileID: 503328658}
 --- !u!4 &553073757
 Transform:
   m_ObjectHideFlags: 0
